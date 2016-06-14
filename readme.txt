@@ -1,8 +1,18 @@
 
-Responsive layout
+
+SSH:
+git@github.com:mlapic/JsCookieNotes.git
 
 
-Checkbox design, responsive size
+INIT, COMMIT & PUSH TO REPOSITORY
+=================================
+
+echo "# JsCookieNotes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:mlapic/JsCookieNotes.git
+git push -u origin master
 
 
-Buttons design, responsive
+
