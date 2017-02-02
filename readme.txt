@@ -1,8 +1,6 @@
 
-
-SSH:
-git@github.com:mlapic/JsCookieNotes.git
-
+git@github.com:userName/repo.git
+https://github.com/userName/repo.git
 
 GLOBAL CONFIG
 =============
@@ -18,21 +16,17 @@ ssh-keygen
 cat id_rsa.pub
 add key to github.com/settings/ssh
 
-
 INIT, COMMIT & PUSH TO REPOSITORY
 =================================
 
-
-
-echo "# JsCookieNotes" >> README.md
+touch README.md
 git init
 git add README.md
 
 git commit -m "first commit"
 git commit -a -m "first commit" // commit all changed files
 
-git remote add origin git@github.com:mlapic/JsCookieNotes.git
+git remote add origin git@github.com:userName/repo.git
+git remote add origin https://github.com/userName/repo.git
+git remote -v
 git push -u origin master
-
-
-
