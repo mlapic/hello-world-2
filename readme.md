@@ -36,7 +36,7 @@ git commit -a -m "first commit" // commit all changed files
 
 git remote add origin https://github.com/userName/repoName.git
 git remote -v
-git remote set-url origin git@github.com:userName/repoName.git
+git remote set-url origin https://github.com/userName/repoName.git
 git push -u origin master
 
 git pull origin master
