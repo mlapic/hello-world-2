@@ -41,11 +41,3 @@ git push -u origin master
 
 git pull origin master
 ```
-
-### TODO
-
-- [x] timestamp
-- [x] [epoch time](http://icanhazepoch.com/)
-- [x] [ip address](http://icanhazip.com/)
-- [x] screen and windows size (jquery)
-
