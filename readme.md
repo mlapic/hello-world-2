@@ -31,7 +31,7 @@ touch README.md
 git init
 git add README.md
 
-git commit -m "first commit"
+git commit -m "first commit" README.md
 git commit -a -m "first commit" // commit all changed files
 
 git remote add origin https://github.com/userName/repoName.git
@@ -48,4 +48,3 @@ git pull origin master
 - [ ] [epoch time](http://icanhazepoch.com/)
 - [ ] [ip address](http://icanhazip.com/)
 - [ ] screen and windows size (jquery)
-
