@@ -44,15 +44,8 @@ git pull origin master
 
 ### TODO
 
-<<<<<<< HEAD
 - [x] timestamp
 - [x] [epoch time](http://icanhazepoch.com/)
 - [x] [ip address](http://icanhazip.com/)
 - [x] screen and windows size (jquery)
 
-
-
-
-
-
->>>>>>> 4e958b95430faeb0b52aece56cfb5ed2ebc81439
