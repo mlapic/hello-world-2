@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+<script src="/common/js/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+  
+  $('#refreshButton').click(function() { writeInfoData(); });
+  
+  $('#getIpButton').click(function() {
+    //$.get("http://icanhazip.com/", function(data){ $("#ipSpan").html(data); });  
+    $("#ipSpan").html("213.202.96.10");
+  });
+  
+  writeInfoData();
+  
+});
+
+
+function writeInfoData() {
+  var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var currentdate = new Date();
+  var date = weekday[currentdate.getDay()] + " " + format(currentdate.getDate()) + "." + format((currentdate.getMonth()+1)) + "." + currentdate.getFullYear();
+  var time = format(currentdate.getHours()) + ":" + format(currentdate.getMinutes()) + ":" + format(currentdate.getSeconds());   
+  $("#output1").html(date + " " + time + "<br>");
+  $("#output1").append(new Date().getTime() + "<br>");
+  $("#output1").append(navigator.userAgent + "<br>");
+  
+  $("#output1").append("window.innerWidth: " + window.innerWidth + "<br>");
+  $("#output1").append("window.innerHeight: " + window.innerHeight + "<br>");
+  $("#output1").append("screen.width: " + screen.width + "<br>");
+  $("#output1").append("screen.height: " + screen.height + "<br>");
+  var ratio = window.devicePixelRatio;
+  $("#output1").append("window.devicePixelRatio: " + window.devicePixelRatio + "<br>");
+  $("#output1").append("screen.width * ratio: " + (screen.width*ratio) + "<br>");
+  $("#output1").append("screen.height * ratio: " + (screen.height*ratio) + "<br>");
+  
+  $("#output1").append("$(document).width(): " + $(document).width() + "<br>");
+  $("#output1").append("$(document).height(): " + $(document).height() + "<br>");
+  $("#output1").append("$(window).width(): " + $(window).width() + "<br>");
+  $("#output1").append("$(window).height(): " + $(window).height() + "<br>");
+}
+
+function format(num) {
+  if(num < 10) {
+    return "0" + num;
+  } else {
+    return num;
+  }
+}
+
+</script>
+
+<style>
+span {font-family: Consolas,monospace; font-size: 16px; margin-left: 25px;}
+#output1 {font-family: Consolas,monospace; font-size: 16px;}
+</style>
+
+</head>
+<body>
+  <div id="output1"></div>
+  <br><br>
+  <button id="refreshButton">Refresh</button>
+  <br><br>
+  <div id="ipDiv"><button id="getIpButton">Get IP address</button><span id="ipSpan"></span></div>
+</body>
+</html>
