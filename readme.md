@@ -1,11 +1,13 @@
-# A Little Help File
+## A Little Help File
 
-## Global Config
+### Global Config
 
-* ```git config --global user.email "you@example.com"```
-* ```git config --global user.name "Your Name"```
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
 
-## Add SSH Key
+### Add SSH Key
 
 ```
 cd ~/.ssh
@@ -15,12 +17,14 @@ cat id_rsa.pub
 
 Add key to github.com/settings/ssh.
 
-## Clone GIT Repository
+### Clone GIT Repository
 
-* ```git clone git@github.com:userName/repoName.git```
-* ```git clone https://github.com/userName/repoName.git```
+```
+git clone git@github.com:userName/repoName.git
+git clone https://github.com/userName/repoName.git
+```
 
-## Init, Commit & Push
+### Init, Commit & Push
 
 ```
 touch README.md
