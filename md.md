@@ -58,4 +58,4 @@ __Strong__
 
 ***
 
-![Have a nice day!](/img/nice_day.jpg "Have a nice day!")
+![gravatar](http://www.gravatar.com/avatar/e6b2f8abab81c5ddd548107bffa6726f?s=100&d=retro "gravatar")
